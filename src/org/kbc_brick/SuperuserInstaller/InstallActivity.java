@@ -32,17 +32,17 @@ import android.view.Menu;
 public class InstallActivity extends Activity {
 	private static final String TAG="InstallActivity";
 
-	private static final String SUPER_USER_URL="https://play.google.com/store/apps/details?id=com.koushikdutta.superuser";
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
+		final String SUPER_USER_URL = getString(R.string.superuser_url);
+
 		Log.i(TAG, "onCreate");
 		new AlertDialog.Builder(this)
-		//.setIcon(R.drawable.ic_launcher)
-		.setMessage("Superuserをインストールしますか？")
+		.setIcon(R.drawable.ic_launcher)
+		.setMessage(R.string.install_check_dlg_msg)
 		.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
 			public void onClick(DialogInterface dialog, int whichButton) {
 				// TODO superuser install ( open google play )

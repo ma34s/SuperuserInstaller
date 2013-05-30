@@ -30,13 +30,12 @@ import android.util.Log;
 public class StartupReceiver extends BroadcastReceiver {
 	private static final String TAG="StartupReceiver";
 
-	private static final String SUPER_USER_PACKAGE="com.koushikdutta.superuser";
-
 	@Override
 	public void onReceive(Context context, Intent intent) {
 		Log.i(TAG, "Start up");
 
-		final Context con = context;
+		final String SUPER_USER_PACKAGE = context.getString(R.string.superuser_package);
+
 		if( !checkAPP(context,SUPER_USER_PACKAGE) )
 		{
 			Intent targetIntent = new Intent(Intent.ACTION_MAIN, null);

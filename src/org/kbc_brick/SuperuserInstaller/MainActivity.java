@@ -32,8 +32,6 @@ import android.view.Menu;
 public class MainActivity extends Activity {
 	private static final String TAG="MainActivity";
 
-	private static final String SUPER_USER_URL="https://play.google.com/store/apps/details?id=com.koushikdutta.superuser";
-
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
