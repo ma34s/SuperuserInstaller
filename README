@@ -1,0 +1,27 @@
+SuperuserInstaller by ma34s
+
+これはなに？：
+	起動時にsuperuser(CWM版)のインストールを
+	促すためのアプリケーションとなります
+
+なんで必要？：
+	SC-04Eにてmake_rooted_system作成するROMでは
+	rootの取り方が特殊となっておりCWM版のsuバイナリを使います。
+
+	make_rooted_systemで作成したROMには
+	他者がアップしているapkを含めていないため
+	セキュリティ的に落ちてしまいます。
+
+動作について：
+　起動時にCWM版のsuperuserがインストールされているか確認します
+　インストールされていない場合、確認ダイアログを表示し
+　OKを押すと、googleplayのページを開きます。
+
+  superuser自体は、開いたgooglePlayよりインストールしてください。
+
+
+superuser by ClockworkMod：
+https://play.google.com/store/apps/details?id=com.koushikdutta.superuser
+
+make_rooted_system by kbc-developers：
+https://github.com/kbc-developers/make_rooted_system
