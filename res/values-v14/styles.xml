@@ -1,6 +1,5 @@
-<resources>
 <!--
-/*
+ *
  * Copyright (C) 2013 ma34s <ma34s.sss@gmail.com>
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -14,8 +13,9 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- */
+ *
 -->
+<resources>
     <!--
         Base application theme for API 14+. This theme completely replaces
         AppBaseTheme from BOTH res/values/styles.xml and
